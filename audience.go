@@ -44,3 +44,7 @@ func (this *Audience) set(key string, Object []string) {
 		}
 	}
 }
+
+func NewAudience() *Audience {
+	return &Audience{}
+}

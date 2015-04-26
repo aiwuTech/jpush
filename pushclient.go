@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	//"fmt"
-	"github.com/isdamir/jpush/common"
+	"github.com/aiwuTech/jpush/common"
 )
 
 const (
