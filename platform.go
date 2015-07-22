@@ -31,3 +31,21 @@ func (this *Platform) Add(os PlatformType) {
 
 	}
 }
+
+func NewPlatform() *Platform {
+	return new(Platform)
+}
+
+func NewIOS() *Platform {
+	pf := NewPlatform()
+	pf.Add(IOS)
+
+	return pf
+}
+
+func NewAndroid() *Platform {
+	pf := NewPlatform()
+	pf.Add(ANDROID)
+
+	return pf
+}

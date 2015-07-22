@@ -14,7 +14,7 @@ type Options struct {
 
 		(消息) JPush 官方 API LIbrary (SDK) 默认设置为推送 “开发环境”。
 	*/
-	Apns_production bool `json:"apns_production,omitempty"`
+	Apns_production bool `json:"apns_production"`
 	/*
 		如果当前的推送要覆盖之前的一条推送，这里填写前一条推送的 msg_id 就会产生覆盖效果，即：1）该 msg_id 离线收到的消息是覆盖后的内容；2）即使该 msg_id Android 端用户已经收到，如果通知栏还未清除，则新的消息内容会覆盖之前这条通知；覆盖功能起作用的时限是：1 天。
 		如果在覆盖指定时限内该 msg_id 不存在，则返回 1003 错误，提示不是一次有效的消息覆盖操作，当前的消息不会被推送。
